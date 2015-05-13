@@ -1,6 +1,6 @@
 <img src="http://www.elao.com/images/corpo/logo_red_small.png"/>
 
-# Ansible Role: ACL repositories
+# Ansible Role: ACL
 
 This role will install ACL (Access Control List) package.
 
