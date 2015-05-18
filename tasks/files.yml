@@ -1,0 +1,15 @@
+---
+
+- name: files > Sets and retrieves file ACL information.
+  acl:
+    name:         "{{ item.name }}"
+    default:      "{{ item.default|default(omit) }}"
+    entity:       "{{ item.entity|default(omit) }}"
+    entry:        "{{ item.entry|default(omit) }}"
+    etype:        "{{ item.etype|default(omit) }}"
+    follow:       "{{ item.follow|default(omit) }}"
+    permissions:  "{{ item.permissions|default(omit) }}"
+    state:        "{{ item.state|default(omit) }}"
+  with_items: elao_acl_files
+
+
