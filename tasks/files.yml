@@ -9,7 +9,7 @@
     etype:        "{{ item.etype|default(omit) }}"
     follow:       "{{ item.follow|default(omit) }}"
     permissions:  "{{ item.permissions|default(omit) }}"
-    state:        "{{ item.state|default(present) }}"
+    state:        "{{ item.state|default('present') }}"
   with_items: elao_acl_files
 
 
