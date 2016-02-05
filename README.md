@@ -18,10 +18,34 @@ None.
 
 ## Installation
 
-Using ansible galaxy:
+### Ansible 2+
+
+Using ansible galaxy cli:
+
+```bash
+ansible-galaxy install elao.acl,2.0
+```
+
+Using ansible galaxy requirements file:
+
+```yaml
+- src:     elao.acl
+  version: 2.0
+```
+
+### Ansible 1 (no longer maintained)
+
+Using ansible galaxy cli:
 
 ```bash
 ansible-galaxy install elao.acl,1.0
+```
+
+Using ansible galaxy requirements file:
+
+```yaml
+- src:     elao.acl
+  version: 1.0
 ```
 
 ## Role Handlers
